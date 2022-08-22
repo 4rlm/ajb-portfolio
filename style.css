@@ -46,3 +46,35 @@ body {
   width: 130%;
   z-index: 0;
 }
+
+.buffer {
+  width: 100%;
+  height: 100vh;
+  /* background-color: blue; */
+}
+
+
+#parallelogram {
+  background: rgb(9,37,64);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: -10vw;
+  z-index: 10;
+  clip-path: polygon(0 calc(0% + 13vh), 100% 0%, 100% calc(100% - 10vw), 0% 100%);
+
+}
+
+#parallelogram::before {
+  /* background: #68A4C4;
+  border-radius: 0 0 50% 50%;
+  content: "";
+  height: 96%;
+  left: 50%;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%) translateY(18px) rotate(2deg);
+  width: 130%;
+  z-index: 0; */
+}
