@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  width: 100%;
   margin: 0;
   min-height: 500vh;
   font-family: "Open Sans", sans-serif;
@@ -12,6 +13,7 @@ body {
   width: 100%;
   height: 90vh;
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -54,7 +56,38 @@ body {
 }
 
 
+
 #parallelogram {
+  width: 100%;
+  height: 190vh;
+  overflow: hidden;
+  position: relative;
+  background-color: yellow;
+}
+
+
+#parallelogram::after {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 115vh;
+  top: 11%;
+  background-color: rgba(9, 37, 64);
+  transform: scale(1.1) rotate(-7deg);
+}
+
+#cards {
+  position: relative;
+  transform: translateY(-35%);
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+/* Below Works, limited browser support. Save for reference */
+/* #parallelogram {
   background: rgb(9,37,64);
   position: relative;
   width: 100%;
@@ -63,18 +96,5 @@ body {
   z-index: 10;
   clip-path: polygon(0 calc(0% + 13vh), 100% 0%, 100% calc(100% - 10vw), 0% 100%);
 
-}
+} */
 
-#parallelogram::before {
-  /* background: #68A4C4;
-  border-radius: 0 0 50% 50%;
-  content: "";
-  height: 96%;
-  left: 50%;
-  opacity: 0.3;
-  position: absolute;
-  top: 0;
-  transform: translateX(-50%) translateY(18px) rotate(2deg);
-  width: 130%;
-  z-index: 0; */
-}
