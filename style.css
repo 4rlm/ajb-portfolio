@@ -11,6 +11,17 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h3 {
+  border: 1px solid red;
+  padding: 6px;
+  width: 23%;
+  position: relative;
+  left: 50%;
+  top: -7%;
+  transform: translate(-50%);
+  background-color: green;
+}
+
 
 /* ---- Hero Begins ---- */
 #hero {
@@ -50,16 +61,14 @@ body {
   width: 130%;
   z-index: 0;
 }
-/* ---- Hero Ends ---- */
 
 
-/* ---- Hero Buffer Ends ---- */
+/* ---- Hero Buffer Begins ---- */
 #hero-buffer {
   width: 100%;
   height: 100vh;
   text-align: center;
 }
-/* ---- Hero Buffer Ends ---- */
 
 
 /* ---- Angled Class Begins ---- */
@@ -93,25 +102,10 @@ body {
   border: 2px solid red;
 }
 
-h3 {
-  border: 1px solid red;
-  padding: 6px;
-  width: 23%;
-  position: relative;
-  left: 50%;
-  top: -7%;
-  transform: translate(-50%);
-  background-color: green;
-}
-/* ---- Angled Class Begins ---- */
 
 
-
-
-
-
-
-#cards {
+/* ---- Top Angled Buffer ---- */
+#top-angled-buffer {
   position: relative;
   transform: translateY(-18%);
   height: 58vh;
@@ -119,19 +113,10 @@ h3 {
   text-align: center;
 }
 
-#cards h3 {
-  padding: 6px;
-  width: 23%;
-  border: 1px solid black;
-  /* transform: scale(1.3) */
-}
 
 
-
-
-
-
-#bottom-buffer {
+/* ---- Mid Angled Buffer ---- */
+#mid-angled-buffer {
   position: relative;
   background-color: white;
   width: 100%;
@@ -140,10 +125,17 @@ h3 {
   text-align: center;
 }
 
-#bottom-buffer h3 {
+
+/* ---- Footer Buffer ---- */
+#footer-buffer {
+  position: relative;
+  background-color: white;
   width: 100%;
-  border: 1px solid black;
+  height: 30vh;
+  /* transform: translateY(-174%); */
+  text-align: center;
 }
+
 
 
 
