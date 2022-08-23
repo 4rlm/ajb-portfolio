@@ -11,18 +11,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h3 {
-  border: 1px solid red;
-  padding: 6px;
-  width: 23%;
-  position: relative;
-  left: 50%;
-  top: -7%;
-  transform: translate(-50%);
-  background-color: green;
-}
-
-
 /* ---- Hero Begins ---- */
 #hero {
   width: 100%;
@@ -62,12 +50,28 @@ h3 {
   z-index: 0;
 }
 
+#hero-buffer h3,
+.angled-inner h3,
+#top-angled-buffer h3,
+#mid-angled-buffer h3,
+#footer-buffer h3 {
+  border: 1px solid red;
+  padding: 6px;
+  width: 23%;
+  position: relative;
+  left: 50%;
+  top: -7%;
+  transform: translate(-50%);
+  background-color: green;
+}
+
 
 /* ---- Hero Buffer Begins ---- */
 #hero-buffer {
   width: 100%;
   height: 100vh;
   text-align: center;
+  border: 2px solid red;
 }
 
 
