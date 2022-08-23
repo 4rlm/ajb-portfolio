@@ -124,7 +124,7 @@ body {
 /* ---- Top Angled Buffer ---- */
 #top-angled-buffer {
   position: relative;
-  height: 75vh;
+  height: 58vh;
   width: 100%;
   text-align: center;
   border: 2px solid blue;
@@ -163,7 +163,7 @@ body {
   position: relative;
   background-color: white;
   width: 100%;
-  height: 55vh;
+  height: 30vh;
   /* transform: translateY(-174%); */
   text-align: center;
   border: 2px solid blue;
