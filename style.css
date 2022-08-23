@@ -57,28 +57,39 @@ body {
 
 
 
-#parallelogram {
+#parallelogram-wrapper {
   width: 100%;
   height: 190vh;
   overflow: hidden;
   position: relative;
-  background-color: yellow;
 }
 
 
-#parallelogram::after {
+#parallelogram {
   content: "";
   position: absolute;
-  width: 130%;
+  width: 180%;
   height: 115vh;
   top: 11%;
   background-color: rgba(9, 37, 64);
-  transform: scale(1.1) rotate(-7deg);
+  transform: scale(1.3) rotate(-7deg);
+  text-align: center;
+}
+
+#inner-parallelogram {
+  transform: rotate(7deg);
+  width: 42%;
+  height: 85%;
+  text-align: center;
+  position: absolute;
+  left: 11.75%;
+  top: 7%;
+  color: white;
 }
 
 #cards {
   position: relative;
-  transform: translateY(-35%);
+  transform: translateY(-18%);
   background-color: red;
   height: 100vh;
   width: 100%;
