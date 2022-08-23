@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -6,7 +8,7 @@ body {
   width: 100%;
   margin: 0;
   min-height: 500vh;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #hero {
@@ -15,7 +17,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 
 #hero::before {
   background: #68A4C4;
@@ -30,7 +31,6 @@ body {
   width: 130%;
   z-index: 0;
 }
-
 
 #hero::after {
   background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6));
@@ -49,34 +49,40 @@ body {
   z-index: 0;
 }
 
-.buffer {
+#top-buffer {
   width: 100%;
   height: 100vh;
-  /* background-color: blue; */
+  text-align: center;
 }
 
+#top-buffer h3 {
+  width: 100%;
+  border: 1px solid black;
+}
 
-
-#parallelogram-wrapper {
+#top-angled-wrapper {
   width: 100%;
   height: 190vh;
   overflow: hidden;
   position: relative;
 }
 
-
-#parallelogram {
+.angled-div {
   content: "";
   position: absolute;
   width: 180%;
+  transform: scale(1.3) rotate(-7deg);
+  text-align: center;
+
+}
+
+#top-angled {
   height: 115vh;
   top: 11%;
   background-color: rgba(9, 37, 64);
-  transform: scale(1.3) rotate(-7deg);
-  text-align: center;
 }
 
-#inner-parallelogram {
+#inner-top-angled {
   transform: rotate(7deg);
   width: 42%;
   height: 85%;
@@ -87,25 +93,123 @@ body {
   color: white;
 }
 
+#inner-footer h3,
+#inner-mid-angled h3,
+#inner-top-angled h3 {
+  border: 1px solid white;
+  padding: 6px;
+  width: 23%;
+  position: relative;
+  left: 50%;
+  top: -5%;
+  transform: translate(-50%);
+}
+
 #cards {
   position: relative;
   transform: translateY(-18%);
-  background-color: red;
-  height: 100vh;
+  height: 58vh;
   width: 100%;
+  text-align: center;
+}
+
+#cards h3 {
+  padding: 6px;
+  width: 23%;
+  border: 1px solid black;
+  /* transform: scale(1.3) */
+}
+
+#mid-angled-wrapper {
+  width: 100%;
+  height: 160vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#mid-angled {
+  height: 82vh;
+  top: 11%;
+  background-color: rgba(9, 37, 64);
+}
+
+#inner-mid-angled {
+  transform: rotate(7deg);
+  width: 42%;
+  height: 85%;
+  text-align: center;
+  position: absolute;
+  left: 11.75%;
+  top: 7%;
+  color: white;
+}
+
+#bottom-buffer {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 30vh;
+  transform: translateY(-174%);
+  text-align: center;
+}
+
+#bottom-buffer h3 {
+  width: 100%;
+  border: 1px solid black;
+}
+
+#footer-wrapper {
+  width: 100%;
+  height: 190vh;
+  overflow: hidden;
+  position: relative;
+  background-color: yellow;
+}
+
+#footer {
+  height: 115vh;
+  bottom: 0%;
+  background-color: rgba(9, 37, 64);
+}
+
+#inner-footer {
+  transform: rotate(7deg);
+  width: 42%;
+  height: 85%;
+  text-align: center;
+  position: absolute;
+  left: 11.75%;
+  top: 7%;
+  color: white;
+}
+
+#very-bottom-buffer h3 {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
 }
 
 
+.clip-path-wrapper {
+  position: relative;
+}
+
 
 /* Below Works, limited browser support. Save for reference */
-/* #parallelogram {
+.clip-path {
   background: rgb(9,37,64);
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100vh;
   margin-bottom: -10vw;
-  z-index: 10;
   clip-path: polygon(0 calc(0% + 13vh), 100% 0%, 100% calc(100% - 10vw), 0% 100%);
+}
 
-} */
+.clip-path-wrapper h3 {
+  position: absolute;
+  color: white;
+  background-color: red;
+  width: 100%;
+  top: 50%;
+}
 
