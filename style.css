@@ -11,6 +11,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+/* ---- Hero Begins ---- */
 #hero {
   width: 100%;
   height: 90vh;
@@ -48,62 +50,66 @@ body {
   width: 130%;
   z-index: 0;
 }
+/* ---- Hero Ends ---- */
 
-#top-buffer {
+
+/* ---- Hero Buffer Ends ---- */
+#hero-buffer {
   width: 100%;
   height: 100vh;
   text-align: center;
 }
+/* ---- Hero Buffer Ends ---- */
 
-#top-buffer h3 {
-  width: 100%;
-  border: 1px solid black;
-}
 
-#top-angled-wrapper {
+/* ---- Angled Class Begins ---- */
+.angled-wrapper {
   width: 100%;
-  height: 190vh;
+  height: 130vh;
   overflow: hidden;
   position: relative;
+  padding: 30vh 0;
 }
 
-.angled-div {
+.angled-main {
   content: "";
   position: absolute;
-  width: 180%;
-  transform: scale(1.3) rotate(-7deg);
+  height: 130vh;
+  width: 100%;
   text-align: center;
-
-}
-
-#top-angled {
-  height: 115vh;
-  top: 11%;
+  transform: skewY(-6deg);
   background-color: rgba(9, 37, 64);
 }
 
-#inner-top-angled {
-  transform: rotate(7deg);
-  width: 42%;
+.angled-inner {
+  transform: skewY(6deg);
+  width: 100%;
   height: 85%;
   text-align: center;
   position: absolute;
-  left: 11.75%;
+  left: 0;
   top: 7%;
   color: white;
+  border: 2px solid red;
 }
 
-#inner-footer h3,
-#inner-mid-angled h3,
-#inner-top-angled h3 {
-  border: 1px solid white;
+h3 {
+  border: 1px solid red;
   padding: 6px;
   width: 23%;
   position: relative;
   left: 50%;
-  top: -5%;
+  top: -7%;
   transform: translate(-50%);
+  background-color: green;
 }
+/* ---- Angled Class Begins ---- */
+
+
+
+
+
+
 
 #cards {
   position: relative;
@@ -120,36 +126,17 @@ body {
   /* transform: scale(1.3) */
 }
 
-#mid-angled-wrapper {
-  width: 100%;
-  height: 160vh;
-  overflow: hidden;
-  position: relative;
-}
 
-#mid-angled {
-  height: 82vh;
-  top: 11%;
-  background-color: rgba(9, 37, 64);
-}
 
-#inner-mid-angled {
-  transform: rotate(7deg);
-  width: 42%;
-  height: 85%;
-  text-align: center;
-  position: absolute;
-  left: 11.75%;
-  top: 7%;
-  color: white;
-}
+
+
 
 #bottom-buffer {
   position: relative;
   background-color: white;
   width: 100%;
   height: 30vh;
-  transform: translateY(-174%);
+  /* transform: translateY(-174%); */
   text-align: center;
 }
 
@@ -158,58 +145,6 @@ body {
   border: 1px solid black;
 }
 
-#footer-wrapper {
-  width: 100%;
-  height: 190vh;
-  overflow: hidden;
-  position: relative;
-  background-color: yellow;
-}
-
-#footer {
-  height: 115vh;
-  bottom: 0%;
-  background-color: rgba(9, 37, 64);
-}
-
-#inner-footer {
-  transform: rotate(7deg);
-  width: 42%;
-  height: 85%;
-  text-align: center;
-  position: absolute;
-  left: 11.75%;
-  top: 7%;
-  color: white;
-}
-
-#very-bottom-buffer h3 {
-  width: 100%;
-  height: 100vh;
-  border: 1px solid black;
-}
 
 
-.clip-path-wrapper {
-  position: relative;
-}
-
-
-/* Below Works, limited browser support. Save for reference */
-.clip-path {
-  background: rgb(9,37,64);
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  margin-bottom: -10vw;
-  clip-path: polygon(0 calc(0% + 13vh), 100% 0%, 100% calc(100% - 10vw), 0% 100%);
-}
-
-.clip-path-wrapper h3 {
-  position: absolute;
-  color: white;
-  background-color: red;
-  width: 100%;
-  top: 50%;
-}
 
