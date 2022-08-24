@@ -119,7 +119,7 @@ body {
   left: 0;
   top: 7%;
   color: white;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 #top-angled-wrapper {
@@ -133,7 +133,8 @@ body {
 }
 
 #top-angled-inner {
-  /* height: 80%; */
+  height: 111vh;
+  /* border: 1px solid red; */
 }
 
 

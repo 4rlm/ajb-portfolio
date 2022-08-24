@@ -95,3 +95,117 @@
   height: 100px;
   object-fit: cover;
 }
+
+
+/* --- Top Angled Section --- */
+#top-angled-inner {
+display: flex;
+align-items: center;
+justify-content: center;
+/* flex-direction: row; */
+
+}
+
+#top-angled-left {
+  position: relative;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 40%;
+}
+
+#top-angled-right {
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  width: 40%;
+}
+
+#top-angled-left-top {
+  height: 45%;
+  background-color: rgb(19, 56, 90);
+  border-radius: 10px;
+  margin: 5%;
+}
+
+#top-angled-left-bottom {
+  height: 45%;
+  background-color: rgb(19, 56, 90);
+  border-radius: 10px;
+  margin: 5%;
+}
+
+#top-angled-left-inner {
+  height: 93%;
+  background-color: rgb(19, 56, 90);
+  border-radius: 10px;
+  margin: 5%;
+}
+
+#top-angled-inner h3 {
+  padding: 30px;
+}
+
+
+/* --- Arrow List Items --- */
+#arrow {
+  border-right:2px solid rgb(255,77,91);
+  border-bottom:2px solid rgb(255,77,91);
+  width:10px;
+  height:10px;
+  transform: rotate(-45deg);
+  margin-top:40px;
+}
+
+ul li {
+position: relative;
+padding-bottom: 10px;
+text-align: left;
+line-height: 1.7;
+}
+
+ul {
+list-style: none;
+}
+
+ul li:before{
+ content: '';
+ position: absolute;
+ border-right:2px solid rgb(255,77,91);
+ border-bottom:2px solid rgb(255,77,91);
+ width:10px;
+ height:10px;
+ top: calc(50% - 4px);
+ left: -20px;
+ transform: translateY(-50%) rotate(-45deg);
+}
+
+
+/* --- Learn More Button --- */
+.learn-more {
+  background-color: rgb(255,77,91);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border: none;
+  transition: 500ms ease-in;
+}
+
+.learn-more:hover {
+  background-color: rgb(9, 37, 64);
+}
+
+
+
+/* Right Side */
+.portfolio-image-wrapper {
+  margin-top: 20%;
+}
+
+.portfolio-image {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 5px;
+}
