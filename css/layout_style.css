@@ -48,6 +48,7 @@ body {
   transform: translateX(-50%) rotate(0deg);
   width: 130%;
   z-index: 0;
+  opacity: 0.7;
 }
 
 #hero-buffer>h3,

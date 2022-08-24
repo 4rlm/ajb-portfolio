@@ -1,10 +1,45 @@
 
+.overlay-text {
+  position: relative;
+  color: #fff;
+  /* padding: 0% 15%; */
+  z-index: 2;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.overlay-text>h1 {
+  position: absolute;
+  left: 20%;
+  top: 17%;
+  font-size: 3.2em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.overlay-text>p {
+  position: absolute;
+  left: 20.5%;
+  top: 30%;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+
 .card-section {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   animation: cardSection 2s linear;
+  /* top: 10%; */
+  transform: translateY(30%);
+
 }
 
 
@@ -25,18 +60,19 @@
   position: relative;
   top: 0;
   transition: top ease 0.5s;
-  width: 200px;
+  width: 22%;
   height: 300px;
   margin: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border: 5px solid lightgray;
-  border-radius: 10px;
+  /* border: 5px solid lightgray; */
+  /* border-radius: 10px; */
   transition: 0.3s;
   cursor: pointer;
 }
 
 .card-wrapper:hover {
   box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid blue;
   top: -10px;
 }
 
