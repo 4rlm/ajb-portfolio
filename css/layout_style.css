@@ -51,7 +51,6 @@ body {
   opacity: 0.7;
 }
 
-#hero-buffer>h3,
 .angled-inner>h3,
 #top-angled-buffer>h3,
 #mid-angled-buffer>h3,
@@ -73,6 +72,23 @@ body {
   height: 100vh;
   text-align: center;
   border: 2px solid blue;
+  position: relative;
+}
+
+#hero-buffer>h2 {
+  width: 100%;
+  position: absolute;
+  top: 12%;
+  left: 0;
+  font-size: 2.5em;
+}
+
+#hero-buffer>p {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  font-size: 1.5em;
 }
 
 
