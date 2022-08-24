@@ -81,7 +81,7 @@ body {
   overflow: hidden;
   position: relative;
   padding: 30vh 0;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .angled-main {
@@ -164,13 +164,12 @@ body {
   background-color: white;
   width: 100%;
   height: 55vh;
-  /* transform: translateY(-174%); */
   text-align: center;
   border: 2px solid blue;
 }
 
 #footer-angled-wrapper {
-  height: 100vh;
+  height: 110vh;
 }
 
 #footer-angled-main {
@@ -179,6 +178,97 @@ body {
 
 #footer-angled-inner {
   height: 85%;
+}
+
+.mini-para-bg {
+
+}
+
+.mini-para-sm {
+  
+}
+
+#mini-para-1 {
+  background-color: rgba(129, 233, 255, 0.9);
+  width: 310px;
+  height: 50px;
+  position: absolute;
+  bottom: 8%;
+  right: 0;
+  transform: skewY(-6deg);
+}
+
+#mini-para-2 {
+  background-color: rgba(	122, 116, 255, 0.9);
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  bottom: 5.5%;
+  right: 2%;
+  transform: skewY(-6deg);
+}
+
+#mini-para-3 {
+  background-color: rgba(129, 233, 255, 0.9);
+  width: 310px;
+  height: 50px;
+  position: absolute;
+  top: 8%;
+  left: 0;
+  transform: skewY(-6deg);
+}
+
+#mini-para-4 {
+  background-color: rgba(	122, 116, 255, 0.9);
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 5.5%;
+  left: 2%;
+  transform: skewY(-6deg);
+}
+
+
+#mini-para-5 {
+  background-color: rgba(129, 233, 255, 0.9);
+  width: 310px;
+  height: 40px;
+  position: absolute;
+  bottom: -9%;
+  right: 0;
+  transform: skewY(-6deg);
+
+}
+
+#mini-para-6 {
+  background-color: rgba(	122, 116, 255, 0.9);
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  bottom: -3%;
+  right: 2%;
+  transform: skewY(-6deg);
+}
+
+
+#mini-para-7 {
+  background-color: rgba(129, 233, 255, 0.9);
+  width: 310px;
+  height: 40px;
+  position: absolute;
+  top: 9%;
+  left: 0;
+  transform: skewY(-6deg);
+}
+
+#mini-para-8 {
+  background-color: rgba(	122, 116, 255, 0.9);
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  top: 7.5%;
+  left: 2%;
+  transform: skewY(-6deg);
 }
 
 
