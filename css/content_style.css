@@ -1,0 +1,57 @@
+
+.card-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: cardSection 2s linear;
+}
+
+
+@keyframes cardSection {
+  0%   {left:0px; top:100px;}
+  25%  {left:0px; top:75px;}
+  50%  {left:0px; top:50px;}
+  75%  {left:0px; top:25px;}
+  100% {left:0px; top:0px;}
+}
+
+#cardSection {
+  animation-timing-function:ease-in-out;
+}
+
+
+.card-wrapper {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 5px solid lightgray;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card-wrapper:hover {
+  box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.2);
+  top: -10px;
+}
+
+.card {
+
+}
+
+.card-image {
+  border-radius: 10px 10px 0 0;
+  width: 200px;
+  height:200px;
+  object-fit: cover;
+}
+
+.card-text {
+  text-align: center;
+}
+
