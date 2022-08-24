@@ -81,7 +81,6 @@ body {
   overflow: hidden;
   position: relative;
   padding: 30vh 0;
-  /* background-color: black; */
 }
 
 .angled-main {
@@ -90,10 +89,6 @@ body {
   width: 100%;
   text-align: center;
   transform: skewY(-6deg);
-  background-color: rgba(9, 37, 64);
-  background-color: #092540;
-  top: 7%;
-  
 }
 
 .angled-inner {
@@ -113,6 +108,8 @@ body {
 
 #top-angled-main {
   height: 130vh;
+  background-color: rgb(9, 37, 64);
+  top: 7%;
 }
 
 #top-angled-inner {
@@ -137,6 +134,8 @@ body {
 
 #mid-angled-main {
   height: 140vh;
+  background-color: rgb(9, 37, 64);
+  top: 7%;
 }
 
 #mid-angled-inner {
@@ -148,7 +147,7 @@ body {
 /* ---- Mid Angled Buffer ---- */
 #mid-angled-buffer {
   position: relative;
-  background-color: pink;
+  background-color: white;
   width: 100%;
   height: 80vh;
   transform: translateY(-23%);
@@ -168,17 +167,23 @@ body {
   border: 2px solid blue;
 }
 
+
+
 #footer-angled-wrapper {
-  height: 110vh;
+  height: 70vh;
+  bottom: -40%;
 }
 
 #footer-angled-main {
-  height: 130vh;
+  height: 120vh;
+  background-color: #f6f9fc;
+  top: 15%;
 }
 
 #footer-angled-inner {
   height: 85%;
 }
+
 
 
 /* ---- Mini Parallelograms --- */
@@ -198,50 +203,48 @@ body {
   transform: skewY(-6deg);
 }
 
-#mini-para-1 {
+#mini-para-bg-1 {
   bottom: 8%;
   right: 0;
 }
 
-#mini-para-2 {
+#mini-para-sm-1 {
   bottom: 7%;
   right: 2%;
 }
 
-#mini-para-3 {
+#mini-para-bg-2 {
   top: 9%;
   left: 0;
 }
 
-#mini-para-4 {
+#mini-para-sm-2 {
   top: 8%;
   left: 2%;
 }
 
 
-#mini-para-5 {
-  bottom: -9%;
+#mini-para-bg-3 {
+  bottom: -23%;
   right: 0;
 
 }
 
-#mini-para-6 {
-  bottom: -3%;
+#mini-para-sm-3 {
+  bottom: -16%;
   right: 2%;
 }
 
 
-#mini-para-7 {
-  top: 9%;
+#mini-para-bg-4 {
+  top: 17%;
   left: 0;
 }
 
-#mini-para-8 {
-  top: 7.5%;
+#mini-para-sm-4 {
+  top: 15%;
   left: 2%;
 }
-
-
 
 
 
