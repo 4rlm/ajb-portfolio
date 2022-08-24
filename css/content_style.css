@@ -18,16 +18,15 @@
   left: 20%;
   top: 17%;
   font-size: 3.2em;
-  font-weight: bolder;
   text-transform: uppercase;
 }
 
 .overlay-text>p {
   position: absolute;
-  left: 20.5%;
+  left: 26%;
   top: 30%;
   font-size: 1.5em;
-  font-weight: bolder;
+  font-family: 'Cabin', sans-serif;
 }
 
 
@@ -39,6 +38,7 @@
   justify-content: center;
   height: 70%;
   top: 30%;
+  padding-top: 20px;
 }
 
 .card-wrapper {
@@ -75,11 +75,13 @@
   align-items: center;
   justify-content: center;
   height: 30%;
+  margin-top: 40px;
+  border-top: 1px solid rgba(30, 67, 86, 0.1);
 }
 
 .icon-wrapper {
   position: relative;
-  top: 5%;
+  top: -10%;
   transition: top ease 0.5s;
   height: 100px;
   margin: 10px;
