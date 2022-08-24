@@ -227,12 +227,12 @@ body {
 #mini-para-bg-3 {
   bottom: -23%;
   right: 0;
-
 }
 
 #mini-para-sm-3 {
-  bottom: -16%;
+  bottom: -26%;
   right: 2%;
+  z-index: 1;
 }
 
 
