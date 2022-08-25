@@ -121,6 +121,14 @@
 
 
 /* --- Top Angled Section --- */
+#top-angled-wrapper h3{
+  color: #01d5ff;
+}
+
+#top-angled-wrapper li{
+  color: #19c5e8;
+}
+
 #top-angled-inner {
 display: flex;
 align-items: center;
@@ -259,6 +267,14 @@ ul li:before{
   border-radius: 10px;
 }
 
+#promo-wrapper h3{
+  color: #01d5ff;
+}
+
+#promo-wrapper p{
+  color: #19c5e8;
+}
+
 #inner-promo {
   display: flex;
   top: 2%;
@@ -279,8 +295,6 @@ ul li:before{
   opacity: 0.8;
   border-radius: 10px 0 0 10px;
 }
-
-
 
 /* -- Promo-Left Overlay -- */
 .overlay-promo-left {
@@ -312,11 +326,6 @@ ul li:before{
   font-size: 1.5em;
   font-family: 'Cabin', sans-serif;
 }
-
-
-
-
-
 
 #promo-right {
   width: 60%;
