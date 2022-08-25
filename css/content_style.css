@@ -216,3 +216,15 @@ ul li:before{
   object-fit: cover;
   border-radius: 5px;
 }
+
+
+/* --- Top Angled Buffer --- */
+
+#promo-wrapper {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  background-color: rgb(243,248,250);
+  margin: 0% auto;
+  top: 5%;
+}
