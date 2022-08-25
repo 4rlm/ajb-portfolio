@@ -119,6 +119,7 @@ justify-content: center;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   height: 100%;
   width: 40%;
+  transform: translateY(-7%);
 }
 
 #top-angled-left-top {
@@ -142,9 +143,10 @@ justify-content: center;
   margin: 5%;
 }
 
-#top-angled-inner h3 {
+#top-angled-left h3 {
   padding: 30px;
 }
+
 
 
 /* --- Arrow List Items --- */
@@ -201,11 +203,16 @@ ul li:before{
 
 /* Right Side */
 .portfolio-image-wrapper {
-  margin-top: 20%;
+  position: relative;
+  height: 30%;
+  width: 95%;
+  margin: 5px auto;
+  margin-top: 25px;
 }
 
 .portfolio-image {
-  width: 80%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
