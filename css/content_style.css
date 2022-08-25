@@ -16,7 +16,7 @@
 .overlay-text>h1 {
   position: absolute;
   left: 20%;
-  top: 17%;
+  top: 25%;
   font-size: 3.2em;
   text-transform: uppercase;
 }
@@ -24,10 +24,32 @@
 .overlay-text>p {
   position: absolute;
   left: 26%;
-  top: 30%;
+  top: 40%;
   font-size: 1.5em;
   font-family: 'Cabin', sans-serif;
 }
+
+#hero-buffer>h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  width: 100%;
+  position: absolute;
+  top: 8%;
+  left: 0;
+  font-size: 2.5em;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(30, 67, 86, 0.1);
+}
+
+#hero-buffer>p {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  font-size: 1.5em;
+  font-family: 'Cabin', sans-serif;
+}
+
 
 
 /* -- Card Section -- */
@@ -52,13 +74,13 @@
   transition: 0.3s;
   cursor: pointer;
   top: -22%;
+  border-radius: 10px;
 }
 
 .card-wrapper:hover,
-.icon-wrapper:hover {
+.icon-wrapper:hover,
+#promo-wrapper:hover {
   box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.2);
-  border: 1px solid blue;
-  transform: translateY(1%);
 }
 
 .card-image {
@@ -88,6 +110,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .icon-image {
@@ -120,6 +143,7 @@ justify-content: center;
   height: 100%;
   width: 40%;
   transform: translateY(-7%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #top-angled-left-top {
@@ -127,11 +151,14 @@ justify-content: center;
   background-color: rgb(19, 56, 90);
   border-radius: 10px;
   margin: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 500ms ease-in;
 }
 
 #top-angled-left-bottom {
   height: 45%;
   background-color: rgb(19, 56, 90);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   margin: 5%;
 }
@@ -199,8 +226,6 @@ ul li:before{
   background-color: rgb(9, 37, 64);
 }
 
-
-
 /* Right Side */
 .portfolio-image-wrapper {
   position: relative;
@@ -208,6 +233,8 @@ ul li:before{
   width: 95%;
   margin: 5px auto;
   margin-top: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 500ms ease-in;
 }
 
 .portfolio-image {
@@ -226,7 +253,10 @@ ul li:before{
   height: 95%;
   background-color: rgb(243,248,250);
   margin: 0% auto;
-  top: 5%;
+  top: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 500ms ease-in;
+  border-radius: 10px;
 }
 
 #inner-promo {
@@ -242,11 +272,95 @@ ul li:before{
 #promo-left {
   width: 40%;
   height: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
+  /* border: 1px solid blue; */
+  background-image: url('https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');
+  background-size: cover;
+  opacity: 0.8;
+  border-radius: 10px 0 0 10px;
 }
+
+
+
+/* -- Promo-Left Overlay -- */
+.overlay-promo-left {
+  position: relative;
+  color: #fff;
+  /* padding: 0% 15%; */
+  z-index: 2;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.overlay-promo-left>h3 {
+  position: absolute;
+  left: 20%;
+  top: 17%;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.overlay-promo-left>p {
+  position: absolute;
+  left: 26%;
+  top: 30%;
+  font-size: 1.5em;
+  font-family: 'Cabin', sans-serif;
+}
+
+
+
+
+
 
 #promo-right {
   width: 60%;
   height: 100%;
-  background-color: blue;
+  background-image: linear-gradient(to right, rgb(4, 22, 40), rgb(9, 37, 64));
+}
+
+.promo-right-detail {
+  display: flex;
+  padding: 10px;
+  height: 25%;
+  width: 95%;
+  margin: 2% auto;
+  border-bottom: 1px solid rgb(28, 64, 99);
+  color: white;
+}
+
+.promo-right-detail:last-of-type {
+  border-bottom: none;
+}
+
+.promo-right-detail-sm {
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fa-comments,
+.fa-laptop-code,
+.fa-database {
+  font-size: 4em;
+  padding: 20px;
+  background-color:  rgb(13, 46, 76);
+  border-radius: 5px;
+  border: 1px solid  rgb(28, 64, 99);
+}
+
+.promo-right-detail-bg {
+  position: relative;
+  top: -18%;
+  width: 75%;
+  line-height: 1.5;
+}
+
+#promo-right {
+  border-radius: 0 10px 10px 0;
 }
