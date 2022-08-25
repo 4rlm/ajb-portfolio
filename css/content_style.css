@@ -219,12 +219,34 @@ ul li:before{
 
 
 /* --- Top Angled Buffer --- */
-
 #promo-wrapper {
+  display: flex;
   position: relative;
   width: 95%;
-  height: 90%;
+  height: 95%;
   background-color: rgb(243,248,250);
   margin: 0% auto;
   top: 5%;
+}
+
+#inner-promo {
+  display: flex;
+  top: 2%;
+  position: relative;
+  width: 95%;
+  height: 90%;
+  margin: 5px auto;
+  padding: 10px;
+}
+
+#promo-left {
+  width: 40%;
+  height: 100%;
+  background-color: yellow;
+}
+
+#promo-right {
+  width: 60%;
+  height: 100%;
+  background-color: blue;
 }
